@@ -4,9 +4,9 @@
 }
 div.container{
 	background-color: bisque;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin: 125px;
 	padding: 30px;
+	text-align: center;
 }
 form#frmLogin{
 	background-color: aqua;
@@ -22,8 +22,6 @@ div.form-group{
 	margin-top: 5px;
 }
 input.form-control{
-	display: block;
-	width: 100%;
 	padding: 2px;
 }
 input.buttom{
@@ -31,4 +29,9 @@ input.buttom{
 	border-radius: 5px;
 	padding: 3px;
 	color:gray;
+}
+body{
+	display: flex;
+	align-items :center;
+	justify-content: center;
 }
