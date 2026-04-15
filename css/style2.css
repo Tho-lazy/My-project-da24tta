@@ -1,0 +1,34 @@
+﻿*{
+	padding: 0;
+	margin: 0;
+}
+div.container{
+	background-color: bisque;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 30px;
+}
+form#frmLogin{
+	background-color: aqua;
+	padding: 20px;	
+}
+h3#title{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgb(128, 105, 128);
+}
+div.form-group{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+input.form-control{
+	display: block;
+	width: 100%;
+	padding: 2px;
+}
+input.buttom{
+	background-color: burlywood;
+	border-radius: 5px;
+	padding: 3px;
+	color:gray;
+}
