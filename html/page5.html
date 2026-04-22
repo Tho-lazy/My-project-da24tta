@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang = "vi">
+	<head>
+		<title>Hệ thống đăng nhập</title>
+		<meta charset = "utf-8">
+	</head>
+	<body>
+		<form id="FrmInBCC">
+			<h2>Bảng cửu chương</h2>
+			<label>Nhập số từ 2 -> 9</label>
+			<input id = "numBCC" name = "numBCC" type = "number" min = "2" max = "9">
+			<button type = "button" onclick = "InBCC()">In</button>
+			<div id="KQ">
+			</div>
+		</form>
+		<script>
+			function InBCC(){
+				const myform = document.forms["FrmInBCC"];
+				const myNumber = myform.elements[0];
+				let num = parseInt(myNumber.value);
+				let kq = "";
+				for (let i=1; i<=10; i++){
+					kq += num + "x" + i + "=" +(num*i) + "<br>" ;
+				}
+				document.getElementById("KQ").innerHTML = kq;
+			}
+		</script>
+	</body>
+</html>
