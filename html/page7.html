@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang = "vi">
+	<head>
+		<title>Thông tin cá nhân</title>
+		<meta charset = "utf-8">
+	</head>
+	<body>
+		<script>
+			const myDiv = document.createElement("div");
+			myDiv.setAttribute("class","product-item");
+			const myDiv1 = document.createElement("div");
+			myDiv1.setAttribute("class","product-image");
+			const productimage = document.createElement("img");
+			productimage.setAttribute("src","../assets/image/hungan.jpg");
+			productimage.setAttribute("alt","xe");
+			productimage.setAttribute("height","250px");
+			myDiv1.appendChild(productimage);
+			myDiv.appendChild(myDiv1);
+			const myDiv2 = document.createElement("div");
+			myDiv2.setAttribute("class","product-info");
+			const Text1 = document.createElement("p")
+			Text1.append("Tên sản phẩm: xe BMW S1000RR");
+			myDiv2.appendChild(Text1);
+			myDiv.appendChild(myDiv2);
+			const Text2 = document.createElement("p")
+			Text2.append("Giá: 480.000.000VNĐ");
+			myDiv2.appendChild(Text2);
+			myDiv.appendChild(myDiv2);
+			
+			document.body.appendChild(myDiv);
+		</script>
+	</body>
+</html>
